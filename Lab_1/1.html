@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .card {
+            position: relative;
+            width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+            background-color: #1e1e1e;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #333;
+        }
+        .card-content {
+            padding: 15px;
+            background-color: #1e1e1e; 
+            position: relative;
+        }
+        .card-content h3 {
+            margin: 0 0 10px;
+            font-size: 1.2rem;
+            color: #ffffff;
+        }
+        .card-content p {
+            display: none;
+            margin: 0;
+            font-size: 0.9rem;
+            color: #b0b0b0;
+        }
+        .card-content a {
+            color: violet;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .card-content a:hover {
+            text-decoration: underline; 
+        }
+        .card:hover .card-content p {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://avatars.githubusercontent.com/u/102899521?v=4" alt="Card Image">
+        <div class="card-content">
+            <h3>Adithya Krishna S</h3>
+            <p>Hi there! My GitHub profile: <a href="https://github.com/quark365">quark365</a></p>
+        </div>
+    </div>
+</body>
+</html>
